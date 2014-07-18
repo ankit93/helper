@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL);
 session_start();
 
 $RandomStr = md5(microtime());// md5 to generate the random string
