@@ -1,0 +1,23 @@
+http://f4-preview.awardspace.com/victorynettechnologies.co.cc/
+
+
+ftp: f4-preview.awardspace.com
+FTP Username : 630659
+pass: vbdotNet1
+
+
+Hosting
+-------------
+http://awardspace.com
+Client ID: 630659
+Login Email: s.krishu@gmail.com
+Password: vbdotNet1
+
+
+Domain
+-------
+
+http://www.co.cc/my_account/my_account_manage_domain.php
+
+us: s.krishu@yahoo.com
+pass: vbdotNet1

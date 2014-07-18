@@ -1,0 +1,14 @@
+http://free1.awardspace.com/phpMyAdmin/index.php?lang=en-iso-8859-1&server=1
+DB Name : 630659_vnt
+DB User: 630659_vnt
+DB Pass:  !vntDB1
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+web: vendor/bin/heroku-php-nginx -i  ext/php.ini -C nginx_app.conf

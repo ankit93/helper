@@ -1,0 +1,11 @@
+{
+    "require": {
+        "php": ">=5.3.3",
+        "ext-intl": "*"
+    },
+    "extra": {
+        "heroku": {
+            "index-document": "index.php"
+        }
+    }
+}
