@@ -1,8 +1,6 @@
 
-<?php
-echo "hello";die;
 
-?>
+
 
 <?php
 foreach (glob("php/*.php") as $filename) {
