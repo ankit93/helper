@@ -1,7 +1,7 @@
 {
     "require": {
         "php": ">=5.3.3",
-        "ext-intl": "*"
+        "ext-gd": "*"
     },
     "extra": {
         "heroku": {
