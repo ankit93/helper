@@ -1,13 +1,13 @@
 <?php
 
 session_start();
-require_once 'classes/GMclass.php';
 $IsHome ="Home";
-$objgm = new GM();
 $msg="";
 $body="";
   if (isset($_POST['submit']))
 {
+	require_once 'classes/GMclass.php';
+	$objgm = new GM();
 	$key=substr($_SESSION['key'],0,5);
       $number = $_REQUEST['txtGImageField'];
       if($number!=$key)
@@ -24,15 +24,15 @@ $body="";
 				 if ($msg == "true") {
        $msg = "Thanks you very much for contacting us. we will get back to you.";
    }
-    $arr = $objgm->getQuotebyEmail($profilemail="sktseema15@gmail.com");
+   
 	  
-    $adminEmail="sktseema15@gmail.com";
+    $adminEmail="vivekjoshi15@gmail.com";
     $headers = "From:" . $adminEmail . "\r\n";
     $headers .= "Reply-To:" . $adminEmail . "\r\n";
     $headers .= "Return-Path:" . $adminEmail . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n" ;
-    $to = $arr['QuoteEmail'];    
+    $to = "aannkkiitt93@gmail.com";    
     $subject = "VictoryNet Technology";
     $body = chunk_split(base64_encode($body));
     $contents = "<br/>";
@@ -42,11 +42,11 @@ $body="";
     $contents .= "<b></b>";
     $contents .= "<br/>";
     $contents .= "<br/>";
-    $contents .= "<b>Email:</b> " . $arr['QuoteEmail'];
+    $contents .= "<b>Email:</b> " . $_POST['txtGEmail'];
     $contents .= "<br/>";
-    $contents .= " <b>Company: </b>" . $arr['QuoteCompany'];
+    $contents .= " <b>Company: </b>" .$_POST['txtGCompany'];
     $contents .= "<br/>";
-    $contents .= "<b> Description: </b>" . $arr['QuoteDescription'];
+    $contents .= "<b> Description: </b>" . $_POST['txaDescription'];
     $contents .= "<br/>";
     $contents .= " ";
     $contents .= "<br/>";
@@ -172,4 +172,7 @@ $body="";
     </div>
   </div>
 </div>
-<?php include ("include/footerProfile.php"); ?>
+<?php include ("include/footerProfile.php"); 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
