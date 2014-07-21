@@ -1,5 +1,19 @@
 <?php
 error_reporting(E_ALL);
+
+  require '../vendor/autoload.php';
+   $mgClient = new Mailgun('key-0j-f52bnw5bw7bozcxwf050xvznhzxb0');
+   $domain = "Victorynettechnologies.herokuapp.com";
+
+	# Make the call to the client.
+	$result = $mgClient->sendMessage($domain, array(
+		'from'    => 'Excited User <me@samples.mailgun.org>',
+		'to'      => 'Baz <aannkkiitt93@gmail.com>',
+		'subject' => 'Hello',
+		'text'    => 'Testing some Mailgun awesomness!'
+	));
+
+
 session_start();
 $IsHome ="Home";
 $msg="";
@@ -67,6 +81,9 @@ $body="";
    {
        $msg = "your request has been successful and sent";
    }
+   
+
+   
 }
 ?>
 <?php include ("include/headerProfile.php"); ?>

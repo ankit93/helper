@@ -1,7 +1,8 @@
 {
     "require": {
         "php": ">=5.3.3",
-        "ext-gd": "*"
+        "ext-gd": "*",
+		"mailgun/mailgun-php": "~1.7.1"
     },
     "extra": {
         "heroku": {
