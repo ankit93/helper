@@ -8,7 +8,7 @@ $body="";
 {
 	require_once 'classes/GMclass.php';
 	$objgm = new GM();
-	$key=substr($_SESSION['key'],0,5);
+	$key=substr($_SESSION['key']);
       $number = $_REQUEST['txtGImageField'];
       if($number!=$key)
 	  {

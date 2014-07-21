@@ -1,29 +1,6 @@
 <?php
 
  require_once 'classes/GMclass.php';
-  if (isset($_POST['submit']))
-{
-
-      $key=substr($_SESSION['key'],0,5);
-      $number = $_REQUEST['txtGImageField'];
-      if($number!=$key){
-      	
-      
-    
-          echo '<center><font face="Verdana, Arial, Helvetica, sans-serif" color="#FF0000">
-		   Validation string not valid! Please try again!</font></center>';
-		    
-		   }
-      else{
-	$objgm = new GM();
-    $msg=$objgm->insertquote($_POST['txtGName'],
-	$_POST['txtGEmail'],$_POST['txtGCompany'],$_POST['txaDescription']);
-			} 
-			 if ($msg == "true") {
-       $msg = "Thanks you very much for contacting us. we will get back to you.";
-   }
-   
-}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
