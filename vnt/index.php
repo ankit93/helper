@@ -16,14 +16,12 @@ $body="";
 		   Validation string not valid! Please try again!</font></center>';		    
       }
       else{
-	
-    $msg=$objgm->insertquote($_POST['txtGName'],
-	$_POST['txtGEmail'],$_POST['txtGCompany'],$_POST['txaDescription']);
-
-			} 
-				 if ($msg == "true") {
-       $msg = "Thanks you very much for contacting us. we will get back to you.";
-   }
+	    // $msg=$objgm->insertquote($_POST['txtGName'],$_POST['txtGEmail'],$_POST['txtGCompany'],$_POST['txaDescription']);
+		// if ($msg == "true") {
+		//	 $msg = "Thanks you very much for contacting us. we will get back to you.";
+		//   }
+	} 
+    
    
 	  
     $adminEmail="vivekjoshi15@gmail.com";
@@ -34,7 +32,7 @@ $body="";
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n" ;
     $to = "aannkkiitt93@gmail.com";    
     $subject = "VictoryNet Technology";
-    $body = chunk_split(base64_encode($body));
+   // $body = chunk_split(base64_encode($body));
     $contents = "<br/>";
     $contents .= "<b>Name:</b>" . " " . strtoupper($_POST['txtGName']) . " " . "!";
     $contents .= "<br/>";
@@ -62,7 +60,7 @@ $body="";
     if ($contents != "")
     {
         //send mail - $subject & $contents come from surfer input
-        mail($to, $subject, $contents, $headers);
+        echo "mail<br />"; mail($to, $subject, $contents, $headers);
     }
     
    if ($msg == "true") 
@@ -173,6 +171,4 @@ $body="";
   </div>
 </div>
 <?php include ("include/footerProfile.php"); 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 ?>
