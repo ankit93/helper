@@ -8,7 +8,7 @@ $body="";
 {
 	require_once 'classes/GMclass.php';
 	$objgm = new GM();
-	$key=substr($_SESSION['key']);
+	$key=$_SESSION['key'];
       $number = $_REQUEST['txtGImageField'];
       if($number!=$key)
 	  {
@@ -36,7 +36,7 @@ $body="";
     $subject = "VictoryNet Technology";
     $body = chunk_split(base64_encode($body));
     $contents = "<br/>";
-    $contents .= "<b>Name:</b>" . " " . strtoupper($arr['QuoteName']) . " " . "!";
+    $contents .= "<b>Name:</b>" . " " . strtoupper($_POST['txtGName']) . " " . "!";
     $contents .= "<br/>";
     $contents .= "<br/>";
     $contents .= "<b></b>";
