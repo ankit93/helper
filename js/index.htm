@@ -1,0 +1,31 @@
+<html>
+  <head>
+  	<title>.:: site wrap ::.</title>
+    <script type="text/javascript">
+		function trackChange(input)
+			{
+				var totalWidth = document.getElementById("wrapSite1").value ;
+				var currentDiv=(100* parseInt(input))/parseInt(totalWidth);
+				document.getElementById("results").value=currentDiv+'%';
+				
+			}
+	</script>	 
+		 
+  </head>
+  <body>
+  	<table>
+      <tr>
+          <td>Wrap site</td>
+          <td><input type="text" name="wrapSite" id="wrapSite1"/></td>   
+      </tr>
+     <tr>
+          <td>Width Div</td>
+          <td><input type="text" name="div" onchange="trackChange(this.value)" /></td>   
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="text" name="total" id="results" /></td>
+      </tr>
+    </table>
+  </body>
+</html>
