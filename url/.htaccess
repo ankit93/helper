@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+#REWRITE RULES
+#---------------------
+
+#RULE REWRITE ALL FILES  
+
+RewriteRule ^([^\.]+)/([0-9]+)/([_0-9a-z-]+) $1.php?id=$2&title=$3 []
+
+#RULE IMPORTED RULE 1 
+
+RewriteRule ^([^\.]+)$ $1.php [L]
+
+</IfModule>-->
