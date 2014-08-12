@@ -6,7 +6,7 @@ RewriteEngine On
 
 #RULE REWRITE ALL FILES  
 
-#RewriteRule ^([^\.]+)/([0-9]+)/([_0-9a-z-]+) $1.php?id=$2&title=$3 []
+RewriteRule ^([^\.]+)/([0-9]+)/([_0-9a-z-]+) $1.php?id=$2&title=$3 []
 
 #RULE IMPORTED RULE 1 
 
