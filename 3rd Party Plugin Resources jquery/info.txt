@@ -1,0 +1,21 @@
+
+http://bootboxjs.com/  :: dialog boxes using Bootstrap modals like popup
+
+
+https://github.com/googlemaps/js-rich-marker	:: RichMarker – A Google Maps JavaScript API utility library
+
+		
+https://github.com/jquery/jquery-mousewheel :: A jQuery plugin that adds cross-browser mouse wheel support with delta normalization.
+
+
+http://www.bulgaria-web-developers.com/projects/javascript/selectbox/)   :: selec box
+
+
+http://jscrollpane.kelvinluck.com/  ::   jScrollPane - cross browser styleable scrollbars with jQuery and CSS
+
+http://imagesloaded.desandro.com/  ::  JavaScript image loader show
+
+
+http://www.itsalif.info/content/ezmark-jquery-checkbox-radiobutton-plugin  :::  jquery checkbox radiobutton plugin
+
+http://portfolio.cmegnin.fr/mouseinfobox/    :: show
